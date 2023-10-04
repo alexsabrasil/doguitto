@@ -1,0 +1,22 @@
+{
+    "name": "Doguitto Pet Store",
+    "short_name": "Doguitto",
+    "description": "Loja de Produtos para animais de estimação",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ff5733",
+    "icons": [
+      {
+        "src": "icone-192x192.png",
+        "sizes": "192x192",
+        "type": "imagens/png"
+      },
+      {
+        "src": "icone-512x512.png",
+        "sizes": "512x512",
+        "type": "imagens/png"
+      }
+    ]
+  }
+  

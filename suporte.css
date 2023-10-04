@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/4.png);
+    
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h5 {
+    text-align: center;
+}
+.texto-pequeno {
+    font-size: 12px; 
+}
+
+.tamanho-fonte-pequeno {
+    font-size: 12px; 
+}
+
+/* Classe de tamanho de fonte personalizada para diminuir o select */
+.select-pequeno {
+    font-size: 12px; 
+}
+
+.nav-link.text-white:hover {
+    color: #111 !important;
+}
+
+.nav-link.text-white {
+    font-size: 20px;
+}
+
+
+/* Estilo para o asterisco das campos obrigatórios */
+.required-field {
+    color: red; 
+    margin-left: 5px; 
+}
+
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #fa330b;
+    color: rgb(243, 237, 237);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #17cc41;
+}
+
+/* Estilo para a tabela */
+table {
+    margin: 0 auto;
+    margin-bottom: 90px;
+    width: 90%;
+    border-collapse: collapse;
+}
+
+div.button-container {
+    margin-top: 20px; 
+}
+
+table, th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+}
+
+/* Estilo para as células da tabela (dias e horários) */
+table select {
+    margin: 0;
+    width: 100%;
+    padding: 5px;
+}
+
+/* Estilo para a caixa de seleção personalizada */
+.custom-select {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    background-color: #ffffff; 
+    
+}
+
+.custom-select select {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    cursor: pointer;
+}
+
+
+
+/* Estilo para cabeçalhos da tabela */
+th {
+    background-color: #096fc3;
+    color: #fff;
+}
+
+ /* Estilo para células da tabela quando estão ativas (clicadas) */
+ table td:active {
+    background-color: #f2f2f2;
+}
+/* Estilo para células alternadas da tabela */
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+    color: #096fc3;
+}
+
+/* Estilo para realçar a célula selecionada */
+table select:focus {
+    outline: none;
+    border-color: #db780f;
+    box-shadow: 0 0 5px rgba(224, 150, 13, 0.7);
+}
+
+.map {
+    width: 100%; 
+    max-width: 800px; 
+    margin: 0 auto; 
+  }
+
+  .map iframe {
+    width: 100%; 
+    height: 400px; 
+    border: 0; 
+  }
+
+/* Estilizar os títulos das colunas */
+.footer-section {
+    background-color: rgb(239, 229, 208);
+    margin-top: 20px; 
+}
+
+/* Classe de tamanho de fonte personalizada para diminuir elementos do rodapé */
+.rodape-pequeno {
+    font-size: 12px; 
+}
+
+/* Estilize as colunas */
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px; 
+}
+
+.footer-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+}
+
+/* Estilize a imagem da logo */
+.logo img {
+    width: 200px;
+}
+
+/* Estilize o parágrafo de direitos reservados */
+
+.reservados p {
+    font-size: 14px;
+    color: #0c0b0b;
+    margin-top: 10px;
+    text-align: center;
+    text-align: justify;
+    padding: 10px;
+}
+
+/* Estilize os títulos das colunas */
+
+.footer-column h2 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    text-align: center;
+    text-align: justify;
+}
+
+/* Estilizar os parágrafos dentro das colunas */
+.address-column p,
+.atendimento-column p {
+    font-size: 12px;
+    color: #0c0b0b;
+   margin-bottom: 1px;
+    text-align: center;
+    text-align: justify;
+    letter-spacing: 1px;
+}
+
+
+.address-column p:hover,
+.atendimento-column p:hover {
+    color: #ff0000; 
+}
+
+
+/* Estilize os links de WhatsApp e E-mail */
+.footer-column a {
+    color: #a15914; 
+    text-decoration: none;
+    transition: color 0.3s; 
+}
+
+/* Altere a cor do link quando o mouse passar por cima */
+.footer-column a:hover {
+    color: #ff0000; 
+}
+
+
+/* Estilos dos links de WhatsApp e E-mail */
+.custom-link {
+    color: #111; 
+}
+
+.custom-link:hover {
+    color: #f60727; 
+    transition: color 0.3s; 
+}
+
+.rodape {
+    text-align: center;
+    
+}
+
+/* Fonte Telas Pequenas */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px; 
+    }
+
+    h1, h2, p {
+        text-align: center;
+    }
+
+    h5 {
+        text-align: center;
+    }
+
+    .texto-pequeno {
+        font-size: 12px;
+    }
+
+    .tamanho-fonte-pequeno {
+        font-size: 12px;
+    }
+
+    
+}
+
+/* Formulários */
+@media (max-width: 767px) {
+    form {
+        max-width: 90%; 
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"],
+    textarea,
+    select {
+        font-size: 14px; 
+    }
+}
+
+/* Tabela */
+@media (max-width: 767px) {
+    table {
+        width: 100%; 
+    }
+
+   
+}
+
+@media (max-width: 767px) {
+    .footer-columns {
+        flex-direction: column; 
+        gap: 10px; 
+    }
+
+    .footer-column {
+        text-align: center; 
+    }
+
+    
+}

@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilos de fundo para o body */
+body {
+    background-image: url(../img/4.png);
+}
+
+/* Estilos para cabeçalhos (tamanho de fonte) */
+h1 {
+    font-size: 20px;
+}
+
+/* Estilos para links de navegação */
+.nav-link.text-white:hover {
+    color: #111 !important;
+}
+
+.nav-link.text-white {
+    font-size: 20px;
+}
+
+/* Estilos para diminuir o tamanho do texto com base em classes */
+.small-font {
+    font-size: 14px; 
+}
+
+.small-header {
+    font-size: 20px; 
+}
+
+.small-form-text {
+    font-size: 12px; 
+}
+
+/* Estilos dos links do Whatsapp e E-mail (cores) */
+.custom-link {
+    color: #111; 
+}
+
+.custom-link:hover {
+    color: #f60727; 
+    transition: color 0.3s; 
+}
+
+.texto-preto {
+    color: #000; 
+}
+
+/* Estilos do botão com hover (cores) */
+.btn-dark-red {
+    background-color: #cb3535; 
+    color: #fff; 
+    transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+.btn-dark-red:hover {
+    background-color: #ab0808; 
+    color: #000; 
+}
+
+/* Classe de tamanho de fonte personalizada para diminuir elementos do rodapé */
+.rodape-pequeno {
+    font-size: 12px; 
+}
+
+/* Estilos do rodapé - você pode deixar inalterado */
+.rodape {
+    text-align: center;
+}
+
+/* Estilos responsivos para telas menores */
+@media screen and (max-width: 768px) {
+   
+    .nav-link.text-white {
+        font-size: 16px;
+    }
+    
+   
+}
+
+
+
+

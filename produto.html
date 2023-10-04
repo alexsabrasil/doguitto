@@ -1,0 +1,500 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="manifest" href="./manifest.json">
+    <link rel="shortcut icon" href="./imagens/logo4-redon.png">
+    <link rel="stylesheet" href="./produto.css">
+    <title>Doguitto Pet Store :: Produtos</title>
+</head>
+<body>
+    <div class="d-flex flex-column wrapper">
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #19b6bb;">
+            <div class="container d-flex justify-content-center">
+                <a class="navbar-brand" href="/">
+                    <img src="./imagens/logo4-redon.png" alt="Logo da Pet Store" width="110">
+                </a>
+            </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target=".navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav flex-grow-1">
+                        <li class="nav-item">
+                            <a href="./index.html" class="nav-link text-white">Home</a>
+                        </li>
+                    </ul>
+                    <div class="collapse navbar-collapse">
+                        <ul class="navbar-nav flex-grow-10">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link text-white"></a>
+                            </li>
+                            <li class="nav-item">
+                                <span class="badge rounded-pill bg-light text-danger position-absolute ms-4 mt-0"
+                                    title="5 produto(s) no carrinho"><small>7</small></span>
+                                <a href="#" class="nav-link text-white">
+                                    <i class="bi-cart" style="font-size:24px;line-height:24px;"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+        <div class="container">
+            <div id="carouselMain" class="carousel slide carousel-dark" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="0" class="active"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="1"></button>
+                    <button type="button" data-bs-target="#carouselMain" data-bs-slide-to="2"></button>
+                </div>
+                <div class="carousel-inner">
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./imagens/banner1.png" class="banner-image carrossel-imagem d-md-block w-100" alt="Propaganda Produtos Pet">
+                    </div>
+                    <div class="carousel-item" data-bs-interval="3000">
+                        <img src="./imagens/banner2.png" class="banner-image carrossel-imagem d-md-block w-100" alt="Propaganda Produtos Pet">
+                    </div>
+                    <div class="carousel-item active" data-bs-interval="3000">
+                        <img src="./imagens/banner3.png" class="banner-image carrossel-imagem d-md-block w-100" alt="Propaganda Produtos Pet">
+                    </div>
+                </div>                
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                    <span class="visually-hidden">Anterior</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                    <span class="visually-hidden">Próximo</span>
+                </button>
+            </div>
+            <hr class="mt-3">
+        </div>
+        <main class="flex-fill">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-5">
+                        <form class="justify-content-center justify-content-md-start mb-3 mb-md-0">
+                            <div class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Digite aqui o que procura">
+                                <span class="input-group-btn" style="font-size: 12px !important;">
+                                    <a href="./imagens/aviso-busca.png" class="btn btn-danger">Buscar</a>
+                                </span>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-12 col-md-7">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>
+                            </form>
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod1.webp">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod3.png">2</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="./imagens/prod2.webp">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod6.jpg">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod5.jpg">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod12.jpg">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+                <hr mt-3>
+                <div class="row g-3 align-items-stretch">
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                                <div class="card"> 
+                                    <img src="./imagens/prod1.webp" class="card-img-top product-image" alt="Produto 1 - Pet Mochila">
+                                </div>
+                            </a>
+                            <div class="card-header cartao-pequeno">
+                                R$ 179,99 ou 10x 17,99
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Pet Mochila</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod3.png" class="card-img-top product-image" alt="Produto 2 - Cesta Bike">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 199,90 ou 10x 19,99
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Cesta Bike</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="../html/aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod2.webp" class="card-img-top product-image" alt="Produto 3 - Imagens de Cães">
+                                
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                Ficamos tistinhos 
+                            </div>                            
+                            <div class="card-body">
+                                <h6 class="card-title cartao-pequeno">Caminha Fofinha</h6>
+                                <p class="card-text truncated">
+                                </p>
+                            </div>
+                            <div class="card-footer">
+                                <a href="#" class="btn btn-light disabled mt-2 d-block cartao-pequeno">
+                                    <small>Reabastecendo Estoque</small>
+                                </a>
+                                <small class="text-danger cartao-pequeno">
+                                    <b>Produto Esgotado</b>
+                                </small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod6.jpg" class="card-img-top product-image" alt="Produto 4 - Casinha Toca">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 199,99 ou 10x 19,99
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Casinha Toca</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                                
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod5.jpg" class="card-img-top product-image" alt="Produto 5 - Mordedorlândia">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 79,99
+                            </div>                           
+                                <h6 class="card-title cartao-pequeno">Mordedorlândia</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod12.jpg" class="card-img-top product-image" alt="Prodeto 6 - Brinquedo Interativo ">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 169,90 ou 10x 16,90
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Brinquedo Interativo</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod4.jpg" class="card-img-top product-image" alt="Produto 7 - Mordedor de Cordas Pet">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 159,90 ou 10x 15,90
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Pet Cordas</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod8.png" class="card-img-top product-image" alt="Produto 8 - AliEduca Dog">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 129,90 ou 10x 12,90
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Alieduca Dog</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod7.png" class="card-img-top product-image" alt="Produto 9 - Petisco Dog">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 69,99
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Petisco Dog 10g</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container cartao-pequeno"> 
+                                <img src="./imagens/prod9.jpg" class="card-img-top product-image" alt="Produto 10 - Ração Úmida Cat">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 79,99
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Ração Úmida 15g</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart-fill" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod10.webp" class="card-img-top product-image" alt="Produto 11 - Ração Dog">
+                            </div>
+                            <div class="card-header cartao-pequeno">
+                                R$ 139,90 ou 10x 13,90
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Ração Dog 100g</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+                        <div class="card text-center bg-light product-card" onmouseover="hoverImage(this)" onmouseout="resetImage(this)">
+                            <a href="#" class="position-absolute end-0 p-2 text-danger">
+                                <i class="bi-suit-heart" style="font-size: 24px; line-height: 24px;"></i>
+                            </a>
+                            <div class="image-container"> 
+                                <img src="./imagens/prod11.webp" class="card-img-top product-image" alt="Produto 12 - Ração Úmida Dog">
+                            </div>
+                            <div class="card-header">
+                                R$ 79,90
+                            </div>
+                                <h6 class="card-title cartao-pequeno">Ração Úmida 15g</h6>
+                            <div class="card-footer">
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Comprar Agora
+                                </a>
+                                <a href="./aviso-comprar-addcar.html" class="btn btn-danger mt-2 d-block cartao-pequeno">
+                                    Adicionar ao Carrinho
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                <hr class="mt-3">
+                <div class="row pb-3">
+                    <div class="col-12">
+                        <div class="d-flex flex-row-reverse justify-content-center justify-content-md-start">
+                            <form class="d-inline-block">
+                                <select class="form-select form-select-sm">
+                                    <option>Ordenar pelo nome</option>
+                                    <option>Ordenar pelo menor preço</option>
+                                    <option>Ordenar pelo maior preço</option>
+                                </select>                                
+                            </form>
+                            <nav class="d-inline-block me-3">
+                                <ul class="pagination pagination-sm my-0">
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod1.webp">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod3.png">2</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="./imagens/prod2.webp">3</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod6.jpg">4</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod5.jpg">5</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="./imagens/prod12.jpg">6</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <footer class="border-top text-muted bg-light">
+            <div class="container rodape-pequeno">  
+            <div class="container">
+                <div class="row py-4">
+                    <div class="col-12 col-md-4 text-center">
+                        &copy; <strong>2023 | Doguitto Pet Store Ltda ME</strong><br>
+                        Rua Virtual Inexistente Lagoa do Araçá, 123, Recife/PE<br>
+                        CPNJ 99.999.999/0001-99<br>
+                        <br>
+                        <a href="#" class="text-decoration-none text-dark">
+                            <strong>Suporte ao Cliente</strong></a>
+                            <p class="hoverable">Contato: <a href="./suporte.html" class="custom-link">Clique aqui!</a></p>
+                        <p>Whatsapp:<a href="https://api.whatsapp.com/send?phone=5581992189743" target="_blank"  class="custom-link">(81) 99999-9999</a></p>
+                    </div>
+			
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="./privacidade.html" class="text-decoration-none text-danger">
+                          <strong>Política de Privacidade</strong>  
+                        </a><br>
+                        <a href="./termos.html" class="text-decoration-none text-danger">
+                           <strong>Termos de Uso</strong> 
+                        </a><br>
+                        <a href="./quemsomos.html" class="text-decoration-none text-danger">
+                          <strong> Quem Somos</strong> 
+                        </a><br>
+                        <a href="./trocas.html" class="text-decoration-none text-danger">
+                           <strong>Trocas e Devoluções</strong> 
+                        </a>
+                        <br>
+                        <br>
+                        <b>Aviso: Conteúdo das páginas meramente ilustrativos.</b>
+                    </div>
+                    <div class="col-12 col-md-4 text-center">
+                        <a href="#" class="text-decoration-none text-dark">
+                           <strong>Formas de Pagamento</strong>
+                        </a><br>
+                        <br>
+                            <img src="./imagens/cartoes-2.png"  width="250"  alt="Formas de Pagamentos - Cartões de Crédito">
+                        </a><br>
+                    </div>
+                </div>
+            </div>
+            <div class="rodape">
+                &copy; <strong>2023 | Desenvolvido por Alexsandra Silva</strong><br>     
+          </div>
+        </footer>
+    </div>
+    <script src="./script.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

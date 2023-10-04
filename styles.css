@@ -1,0 +1,496 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 12px;
+    background: url(../img/4.png);
+    height: 100%;
+    
+}
+
+/* Início Menu Lateral */
+ul {
+    list-style: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #19b6bb;
+    color: #fff;
+    padding: 25px 35px;
+    text-align: center;
+}
+
+/* Estilos para a logo */
+.logo img {
+    width: 90px; 
+    height: auto; 
+    margin-top: 5px; 
+}
+
+/* Estilo para ocultar o input type="checkbox" */
+#menu-toggle {
+    opacity: 0;
+    position: absolute;
+    left: -9999px; 
+    top: -9999px;
+}
+
+/* Estilos do botão de menu */
+.menu-btn {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 2;
+}
+
+/* Menu Harmburguer */
+.bar {
+    width: 30px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+    transition: 0.4s;
+}
+
+/* Estilos da barra lateral */
+.sidebar {
+    background-color: rgba(16, 16, 16, .5);
+    width: 140px;
+    height: 100%;
+    overflow-y: none; /* Barra de Rolagem */
+    position: relative;
+    padding: 16px 20px 16px 20px;
+    font-weight: bold;
+    top: 0;
+    transition: all .5s;
+    z-index: 1;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    padding-top: 15px;
+}
+
+.sidebar ul li:nth-last-child(1) {
+    margin-bottom: 50px;
+}
+
+/* Cor das fontes do menu */
+.sidebar a {
+    display: block;
+    padding: 20px 5px;
+    color: white;
+    text-decoration: none;
+}
+
+.sidebar a:hover {
+    background-color: rgb(176, 224, 230);
+    color: black;
+}
+
+label {
+    background-color: #1b979b;
+    padding: 15px;
+    position: absolute;
+}
+
+/* Estilos para a seção de projetos (projects) */
+.projects {
+    padding: 20px;
+    
+}
+
+.sobre_titulo {
+    position: absolute;
+    text-align: center;
+    top: 35%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+}
+
+.sobre_titulo h1 {
+    font-size: 12px;
+    margin-bottom: 10px;
+    background-image: radial-gradient(circle at 56.16% 120.44%, #ff74f7 0, #ff70fc 10%, #ff6bfb 20%, #ff66f5 30%, #ea5eea 40%, #be55d8 50%, #934bc4 60%, #6c42b1 70%, #473ba0 80%, #1d3590 90%, #002f83 100%);
+}
+
+.sobre_titulo p {
+    color: #745454;
+}
+
+.gradiente-texto {
+    
+    -webkit-background-clip: text; 
+    color: transparent; 
+   
+}
+
+/* Estilos para o contêiner do vídeo */
+.video-container {
+    width: 100%;
+    max-width: 200px; 
+    margin: 0 auto; 
+    overflow: hidden; 
+    position: absolute;
+    top: 56%; /* Define altura */
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    
+}
+
+/* Vídeo dentro do contêiner */
+.video-container video {
+    width: 100%; 
+    height: 300px; 
+    border: 0;
+    
+}
+
+video {
+    max-width: 100%;
+    height: auto;
+    max-height: 110px; /* Defina uma altura máxima desejada */
+}
+
+/* Estilos para os controles do vídeo */
+video::-webkit-media-controls {
+    font-size: 12px;
+}
+
+
+/* Estilos para a seção de raças de cães (dog-breeds-slider) */
+.dog-breeds-slider {
+    text-align: center;
+    margin-top: -270px;
+    position: fixed;
+    
+}
+
+section h2 {
+    text-align: center;
+}
+
+.rounded-image {
+    border-radius: 50%;
+    overflow: hidden;
+    width: 100px;
+    height: 90px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    max-height: 100px; /* Defina uma altura máxima desejada */
+}
+
+/* Estilize o container do slideshow */
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+/* Slides - Dog */
+.dog-slides {
+    display: flex;
+    text-align: center;
+    transition: transform 0.5s ease;
+}
+
+.dog-slide  {
+    position: relative;
+    border: 4px solid #552302;
+    border-radius: 18px;
+    padding: 20px;
+    text-align: center;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.dog-slide img {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.dog-slide p {
+    font-weight: bold;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.dog-slide a {
+    text-decoration: none;
+    background-color: #007bff;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Link (âncora) quando o mouse estiver sobre ele */
+.dog-slide a:hover {
+    background-color: #0056b3;
+}
+
+.dog-slide a:hover {
+    background-color: #555;
+}
+
+.botao {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+/* Estilos para o container do slide */
+.slideshow-container {
+    position: relative;
+}
+
+/* Estilos para os botões */
+.botaoesquerda, .botaodireira {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.botaoesquerda {
+    left: 0;
+    top: 30%;
+}
+
+.botaodireira {
+    right: 0;
+    top: 30%;
+}
+
+.botao:hover {
+    background-color: #555;
+}
+
+/*Footer */
+footer {
+    width: 100%;
+    min-height: 250px;
+    background: #444;
+    display: flex;
+}
+
+footer .boxs {
+    width: 320px;
+    min-height: 150px;
+    padding: 20px;
+}
+
+footer .boxs:nth-child(3) {
+    width: 200px;
+}
+
+.boxs h2 {
+    color: #fff;
+    margin-bottom: 20px;
+}
+
+.box ul li {
+    margin:  10px 0px;
+    list-style: none;
+}
+
+.boxs ul li a {
+    color: #ddd;
+    text-decoration: none;
+    font-size: 12px;
+}
+
+.boxs ul li a:hover {
+    color: #fff;
+}
+
+.boxs p {
+    color: #fff;
+    font-size: 12px;
+}
+
+.boxs h4 {
+    color: #19b6bb;
+}
+/* Estilos para os links de email */
+.custom-link {
+    color: #fff;
+    text-decoration: none;
+}
+
+.custom-link:hover {
+    color: #f60727;
+    transition: color 0.3s;
+}
+
+.footer {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #333;
+    padding: 0px 20px;
+}
+
+.copy {
+    width: 400px;
+    height: 30px;
+    display: flex;
+    font-size: 12px;
+    color: #fff;
+    padding: 0px 10px;
+    justify-content: center;
+}
+
+/* Responsividade */
+
+/* Body */
+@media (max-width: 767px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+/* Menu Lateral */
+@media (max-width: 768px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .sidebar {
+        width: 250px; 
+        left: -250px; 
+        transition: left 0.5s; 
+    }
+
+    #menu-toggle:checked + .menu-btn .bar:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    #menu-toggle:checked + .menu-btn .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    #menu-toggle:checked + .menu-btn .bar:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
+    }
+
+    #menu-toggle:checked ~ .sidebar {
+        left: 0; 
+    }
+}
+
+/* Conteúdo Principal */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+    .curiosities-title {
+        font-size: 24px;
+    }
+    .curiosities-description {
+        font-size: 16px;
+    }
+    .video-container {
+        text-align: center;
+    }
+    .video {
+        max-width: 100%;
+        height: auto;
+        max-height: 300px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+/* Estilos para a seção de raças de cães (dog-breeds-slider) */
+.dog-breeds-slider {
+    text-align: center;
+    position: absolute;
+    top: 150%; 
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* Dispositivos pequenos (responsivo)*/
+@media (max-width: 768px) {
+    .dog-breeds-slider {
+        top: 100%; 
+    }
+}
+
+/* Footer */
+@media (max-width: 950px) {
+    footer {
+        flex-direction: column;
+    }
+    footer .boxs {
+        width: 100%;
+        text-align: center;
+    }
+    footer .boxs:nth-child(3) {
+        width: 100%;
+    }
+}
+
+/* Estilos para telas grandes */
+@media (min-width: 768px) {
+    
+    .projects {
+      
+      width: 50%;
+      float: left;
+    }
+  
+    
+  }
+  
+  /* Estilos para telas pequenas */
+  @media (max-width: 767px) {
+   
+    .projects {
+      
+      width: 100%;
+      float: none;
+    }
+  
+    
+  }
+  

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/img/favicon/manifest.json">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="shortcut icon" href="./imagens/logo4-redon.png">
+    <link rel="stylesheet" href="./suporte.css">
+    <title>Doguitto Pet Store :: Suporte ao Cliente</title>
+</head>
+
+<body style="min-width:372px;">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #19b6bb;">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center w-100"> 
+            <a class="navbar-brand" href="#">
+                <span style="margin-right: 250px;">Doguitto Pet Store</span> 
+               <img src="./imagens/logo4-redon.png" alt="Logo da Pet Store" width="100">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target=".navbar-collapse">
+                   <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a href="./index.html" class="nav-link text-white">Home</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </div>
+    </nav>
+    <br>
+    <h5>Como podemos ajudar!</h5>
+    <br>
+    <br>
+    <form id="contact-form">
+      <div class="form-group tamanho-fonte-pequeno">
+          <label for="nome">Nome <span class="required-field">*</span></label>
+          <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group tamanho-fonte-pequeno">
+          <label for="email">E-mail <span class="required-field">*</span></label>
+          <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group tamanho-fonte-pequeno">
+          <label for="telefone">Telefone <span class="required-field">*</span></label>
+          <input type="tel" id="telefone" name="telefone">
+      </div>
+      <div class="form-group tamanho-fonte-pequeno">
+          <label for="mensagem">Mensagem <span class="required-field">*</span></label>
+          <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+      </div>
+        <div class="form-group tamanho-fonte-pequeno">
+          <p class="small">Como prefere o nosso contato?</p>
+          <label>
+              <input type="checkbox" name="contact-preference" value="email">
+              E-mail
+          </label>
+          <label>
+              <input type="checkbox" name="contact-preference" value="phone">
+              Telefone
+          </label>
+          <label>
+              <input type="checkbox" name="contact-preference" value="whatsapp">
+              WhatsApp
+          </label>
+      </div>
+        <div class="form-group tamanho-fonte-pequeno">
+            <p class="tamanho-fonte-pequeno">Qual horário prefere ser atendido (a)?</p>
+            <select id="appointment-time" name="appointment-time" required class="select-pequeno">
+                <option value="manha">Manhã</option>
+                <option value="tarde">Tarde</option>
+                <option value="noite">Noite</option>
+            </select>            
+        </div>
+        <div class="form-group tamanho-fonte-pequeno">
+          <label for="newsletter">Gostaria de receber nossas novidades por e-mail?</label>
+          <label>
+              <input type="checkbox" id="newsletter" name="newsletter">
+              Sim 
+          </label>
+          <label>
+            <input type="checkbox" id="newsletter-no" name="newsletter" value="no">
+            Não
+        </label>
+      </div>
+    <table>
+      <tr>
+         <th class="select-pequeno">Dias</th>
+         <th class="select-pequeno">Horário</th>
+      </tr>
+      <tr>
+        <td>
+            <select name="day" class="select-pequeno">
+                  <option value="Seg">Seg</option>
+                  <option value="Qua">Qua</option>
+                  <option value="Sexta">Sexta</option>
+              </select>
+          </td>
+          <td>
+              <select name="time" class="select-pequeno">
+                  <option value="8h-10h">8h ~ 10h</option>
+                  <option value="10h-12h">10h ~ 12h</option>
+                  <option value="14h-16h">14h ~ 16h</option>
+                  <option value="16h-18h">16h ~ 18h</option>
+                  <option value="18h-20h">18h ~ 20h</option>
+              </select>
+          </td>
+      </tr>
+  </table>
+  <div class="button-container">
+    <button type="submit" class="select-pequeno">Enviar Formulário</button>
+  </div>
+</form>
+  <br>
+  <br>
+    <h2 class="small">Nosso Estabelecimento</h2>
+        <p class="small">Nosso estabelecimento está localizado no coração da cidade.</p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3950.0693333904087!2d-34.91761659194937!3d-8.094412291900568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ab1ee6f53af3b3%3A0x35f9062b3bb23124!2zTGFnb2EgZG8gQXJhw6fDoQ!5e0!3m2!1spt-BR!2sbr!4v1695067918435!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <footer class="border-top text-muted bg-light">
+        <div class="container rodape-pequeno">
+            <div class="row py-3">
+                <div class="col-12 col-md-4 text-center">
+                    &copy; <strong>2023 | Doguitto Pet Store Ltda ME</strong><br>
+                    Rua Virtual Inexistente Lagoa do Araçá, 123, Recife/PE <br>
+                    CPNJ 99.999.999/0001-99
+                </div>
+                <br>
+                <br>
+                <div class="col-12 col-md-4 text-center small-font">
+                    <a href="./privacidade.html" class="text-decoration-none text-danger">
+                       <strong>Política de Privacidade</strong> 
+                    </a><br>
+                    <a href="./termos.html" class="text-decoration-none text-danger">
+                      <strong> Termos de Uso</strong> 
+                    </a><br>
+                    <a href="./quemsomos.html" class="text-decoration-none text-danger">
+                       <strong>Quem Somos</strong> 
+                    </a><br>
+                    <a href="./trocas.html" class="text-decoration-none text-danger">
+                       <strong>Trocas e Devoluções</strong> 
+                    </a>
+                </div>
+                <br>
+                <br>
+                <div class="col-12 col-md-4 text-center small-font">
+                    <a href="#" class="text-decoration-none text-dark">
+                        <strong>Suporte ao Cliente</strong></a>
+                        <p class="hoverable">Contato: <a href="./suporte.html" class="custom-link">Clique aqui!</a></p>
+                    <p class="hoverable">Whatsapp:<a href="https://api.whatsapp.com/send?phone=5581992189743" target="_blank" class="custom-link">(81) 99999-9999</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="rodape rodape-pequeno">
+            &copy; <strong>2023 | Desenvolvido por Alexsandra Silva</strong><br>     
+      </div>
+    </footer>
+</div>
+<script src="./suporteform.js"></script>                      
+<script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

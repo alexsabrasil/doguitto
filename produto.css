@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600&family=Poppins:wght@200;300;400;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    
+}
+
+body {
+    min-width: 372px;
+    font-family: 'Poppins', sans-serif;
+    background-image: url(../img/4.png);
+}
+
+/* Estilo do Link Principal */
+.nav-link.text-white:hover {
+    color: #111 !important;
+}
+
+/* Ajusta o tamanho da fonto Menu Navegação */
+.nav-link.text-white {
+    font-size: 18px; 
+  }
+  
+ 
+/* Classe de tamanho máximo para as imagens do carrossel */
+.carrossel-imagem {
+    max-width: 900px; 
+    height: 300px; 
+}
+
+/* Defina a classe personalizada bg-19b6bb */
+.bg-19b6bb {
+    background-color: #19b6bb !important; 
+}
+
+/* Estilo das imagens dos produtos */
+.product-card {
+    height: 400px;
+    position: relative;
+    cursor: pointer;
+}
+
+.product-image {
+    height: auto; 
+    
+}
+
+.product-image, .hover-image {
+    max-width: 100%;
+    max-height: 100%; 
+    width: auto; 
+}
+
+.hover-image {
+    display: none; 
+}
+
+
+.product-image {
+    transition: opacity 0.3s ease; 
+}
+
+.product-image:hover {
+    opacity: 0.7; 
+}
+
+/* Diminuir tamanho da fonte em todos os selects */
+select {
+    font-size: 10px !important;; 
+}
+
+/* Classe de tamanho de fonte personalizada para diminuir elementos do cartão */
+.cartao-pequeno {
+    font-size: 12px; 
+}
+
+/* Diminuir o tamanho da fonte para elementos específicos */
+.select-pequeno {
+    font-size: 12px; 
+}
+
+.paginacao-pequena {
+    font-size: 12px; 
+}
+
+
+
+.page-item {
+    font-size: 10px;
+}
+/* Classe de tamanho de fonte personalizada para diminuir elementos */
+.texto-pequeno {
+    font-size: 12px; 
+}
+
+
+/* Estilo da descrição truncada */
+.card-text.truncated, .card-header .truncated {
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis; 
+}
+
+
+label:hover .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+label .text-dark {
+    transition: color 0.2s ease;
+}
+
+.btn-check:checked+.btn-outline-danger .text-dark,
+.btn-check:active+.btn-outline-danger .text-dark,
+.btn-check:hover+.btn-outline-danger .text-dark {
+    transition: color 0.2s ease;
+    color: white !important;
+}
+
+.flex-even {
+    flex: 1;
+    min-width: 300px;
+}
+
+/* Estilo das imagens dos produtos */
+.fixed-image {
+    max-width: 100%; 
+    height: auto; 
+    max-height: 200px; 
+}
+
+
+/* Estilos gerais para o footer */
+footer {
+    background-color: gray;
+    padding: 20px;
+}
+
+/* Estilizar as colunas do footer */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+}
+
+/* Estilizar cada coluna individualmente */
+.footer-column {
+    flex: 1;
+    margin-right: 20px;
+    margin-bottom: 20px; 
+}
+
+/* Estilizar a coluna "Atendimento" */
+.atendimento-column {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Classe de tamanho de fonte personalizada para diminuir elementos do rodapé */
+.rodape-pequeno {
+    font-size: 12px; 
+}
+
+
+/* Estilizar a coluna "Meios de Pagamento" */
+.payment-column {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+
+.payment-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilizar os títulos das colunas */
+.footer-column {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center; 
+    align-items: center; 
+}
+
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    gap: 20px;
+}
+
+
+.footer-column h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: center;
+    text-align: justify;
+}
+
+.footer-column.institucional-column p {
+    text-align: justify;
+    line-height: 1.5; 
+    word-spacing: 2px;
+}
+
+/* Estilizar os parágrafos de informações institucionais */
+.footer-column p {
+    font-size: 10px;
+    color: #333;
+    margin-bottom: 5px;
+    text-align: center;
+    text-align: justify;
+}
+
+/* Estilize a coluna de Endereço e adicione espaçamento */
+.address-column {
+    flex: 1;
+    padding: 10px;
+    margin-right: 10px; 
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    gap: 10px;
+}
+
+/* Estilize os parágrafos dentro da coluna de Endereço */
+.address-column p {
+    margin: 5px 0; 
+}
+
+/* Estilos dos links de WhatsApp e E-mail */
+
+.custom-link {
+    color: #111; 
+}
+
+.custom-link:hover {
+    color: #f60727; 
+    transition: color 0.3s; 
+}
+
+.rodape{
+    text-align: center;
+    
+}
+
+
+@media screen and (max-width: 768px) {
+    .nav-link.text-white {
+        font-size: 16px; 
+    }
+    
+    .navbar-nav {
+        flex-direction: column; 
+    }
+    
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; 
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footer-column h2 {
+        font-size: 16px; 
+    }
+    
+    .footer-column p {
+        font-size: 12px; 
+    }
+    
+    .footer-columns {
+        flex-direction: column; 
+    }
+    
+    .footer-column {
+        margin-bottom: 20px; 
+    }
+}
+
+/* Tornar todas as imagens responsivas */
+img {
+    max-width: 100%;
+    height: auto;
+}
